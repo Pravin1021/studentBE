@@ -13,7 +13,7 @@ mongoose.connect("mongodb+srv://mpravin1021:Pravin12@mydb.sxdrpta.mongodb.net/?r
 
 const app=express()
 app.use(express.json())
-app.use(cors({  origin: 'https://studentfe.onrender.com',
+app.use(cors({  origin: 'https://student-fe-pravins-projects-73df0d04.vercel.app',
 }))
 
 
