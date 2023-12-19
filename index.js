@@ -5,7 +5,7 @@ const sectionAmodel=require('./modal/sectionA')
 const sectionBmodel=require('./modal/sectionB')
 
 
-mongoose.connect("mongodb://127.0.0.1:27017/student")
+mongoose.connect("mongodb+srv://mpravin1021:Pravin12@mydb.sxdrpta.mongodb.net/?retryWrites=true&w=majority")
 .then(()=>console.log("Connected"))
 .catch((err)=>console.log(err))
 
@@ -91,7 +91,7 @@ app.get("/", async (req, res) => {
     }
   });
 
-const Port=3001
+const Port=process.env.PORT||3001
 app.listen(Port,()=>{
     console.log("Server is running");
 })
